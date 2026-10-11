@@ -1,0 +1,11 @@
+ErrorDocument 404 /404.html
+
+# Кеш для статики (Lighthouse, 11.10). Если хостинг не читает — ничего не ломает.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
