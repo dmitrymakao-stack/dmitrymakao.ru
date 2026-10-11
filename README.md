@@ -1,3 +1,5 @@
 # dmitrymakao.ru
 
 Исходники сайта-портфолио Дмитрия Макао — https://dmitrymakao.ru/
+
+Хостинг забирает изменения из ветки main раз в 5 минут (cron, git pull).
