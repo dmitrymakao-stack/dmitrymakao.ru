@@ -1,5 +1,8 @@
 ErrorDocument 404 /404.html
 
+# Служебная папка Git на хостинге — не отдавать наружу (12.10)
+RedirectMatch 404 /\.git
+
 # Кеш для статики (Lighthouse, 11.10). Если хостинг не читает — ничего не ломает.
 <IfModule mod_expires.c>
   ExpiresActive On
