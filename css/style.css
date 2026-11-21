@@ -120,7 +120,7 @@ section[id] { scroll-margin-top: 64px; }
   mix-blend-mode: difference;
 }
 .header__logo { font-family: var(--font-mono); font-weight: 600; font-size: 16px; line-height: 1.3; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
-.header__nav { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none; gap: clamp(24px, calc(2.679vw - 3.43px), 48px); white-space: nowrap; }
+.header__nav { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none; gap: clamp(20px, calc(2.679vw - 3.43px), 48px); white-space: nowrap; }
 .header__nav a { text-decoration: none; }
 .header__nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .header__right { display: flex; align-items: center; gap: 16px; }
@@ -137,6 +137,10 @@ section[id] { scroll-margin-top: 64px; }
 @media (min-width: 1280px) {
   .header__tg-long { display: inline; }
   .header__tg-short { display: none; }
+}
+/* 1024–1439: в шапке семь пунктов, включая «Блог» — чуть плотнее, чтобы не наезжать на логотип и кнопку Telegram */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .header__nav { gap: 20px; }
 }
 
 .menu {
